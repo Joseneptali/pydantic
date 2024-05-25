@@ -1,17 +1,17 @@
 from pydantic import BaseModel
+from core.config import Base
 
-class medico(BaseModel):
-   id: int,
-   nombre: str,
-   apellido: str,
-   usuario: str,
-   email: str,
-   contrasena: str,
-   fecha_nacimiento: str,
-   sexo: int,
-   direccion:  str,
-   pais: str,
-   ciudad: str,
-   codigo_postal: str,
-   telefono: str,
+class Medico(BaseModel):
+   nombre: str
+   apellido: str
+   usuario: str
+   email: str
+   contrasena: str
+   fecha_nacimiento: str
+   sexo: str
+   direccion: str
+   pais: str
+   ciudad: str
+   codigo_postal: str
+   telefono: str
    estado: str

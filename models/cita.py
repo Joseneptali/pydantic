@@ -1,12 +1,12 @@
 from pydantic import BaseModel
 
-class Cita(BaseModel):
+class cita(BaseModel):
   codigo_cita: int;
-  nombre_paciente: int;
+  nombre_paciente: str;
   especialidad: str;
   medico: str;
   fecha: str;
   tiempo: int;
   email: str;
-  numero_telefono: str;
-  mensaje: str
+  numero_telefono: int;
+  mensaje: str;
